@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.ManageHospitals">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Hospital Name"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/hospitalName"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Address"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalDistrict" />
+
+                <EditText
+                    android:id="@+id/hospitalDesc"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:height="50dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="10dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/address" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Phone Number 1"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalDesc" />
+
+                <EditText
+                    android:id="@+id/hospitalPhone1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hospitalPhone2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Phone Number 2"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="@+id/hospitalPhone2"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalDesc" />
+
+                <EditText
+                    android:id="@+id/hospitalPhone2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hospitalPhone1"
+                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Phone Number 3"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalPhone1" />
+
+                <EditText
+                    android:id="@+id/hospitalPhone3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="@+id/hospitalPhone1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Longitude"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalPhone3" />
+
+                <EditText
+                    android:id="@+id/hospitalLng"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hospitalLtd"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Latitude"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="@+id/hospitalLtd"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalPhone3" />
+
+                <EditText
+                    android:id="@+id/hospitalLtd"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hospitalLng"
+                    app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                <Button
+                    android:id="@+id/hospitalSubmitButton"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Submit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_abplus" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="A + (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalLng" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="A - (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_aplus"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalLtd" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="B - (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_bplus"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_aneg" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="O + (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_bplus" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="O - (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_oplus"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_bneg" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="AB + (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_oplus" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="AB - (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_abplus"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_oneg" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="B + (l)"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospital_aplus" />
+
+                <EditText
+                    android:id="@+id/hospital_aplus"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hospital_aneg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                <EditText
+                    android:id="@+id/hospital_bplus"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hospital_bneg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+                <EditText
+                    android:id="@+id/hospital_oplus"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hospital_oneg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+                <EditText
+                    android:id="@+id/hospital_abplus"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/hospital_abneg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+                <EditText
+                    android:id="@+id/hospital_oneg"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_oplus"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+                <EditText
+                    android:id="@+id/hospital_abneg"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_abplus"
+                    app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+                <EditText
+                    android:id="@+id/hospital_bneg"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_bplus"
+                    app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+                <EditText
+                    android:id="@+id/hospital_aneg"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/hospital_aplus"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="8dp"
+                    android:text="District"
+                    android:textColor="@color/material_black"
+                    android:textSize="13dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hospitalName" />
+
+                <Spinner
+                    android:id="@+id/hospitalDistrict"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/textfield_design"
+                    android:paddingHorizontal="8dp"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView48" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Hospitals"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hospitals_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
