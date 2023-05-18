@@ -134,9 +134,20 @@ public class CampaignListAdapter extends RecyclerView.Adapter<CampaignListAdapte
             holder.campaignRecordCardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String uri = String.format(Locale.ENGLISH, "geo:%f,%f", data.getLtd(), data.getLng());
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                    context.startActivity(intent);
+//                    String uri = String.format(Locale.ENGLISH, "geo:%f,%f", String.valueOf(data.getLtd()), String.valueOf(data.getLng()));
+//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+//                    context.startActivity(intent);
+
+//                    Uri gmmIntentUri = Uri.parse("google.streetview:cbll="+String.valueOf(data.getLtd())+","+String.valueOf(data.getLng()));
+//                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+//                    mapIntent.setPackage("com.google.android.apps.maps");
+//                    context.startActivity(mapIntent);
+                    Uri gmmIntentUri = Uri.parse("geo:"+data.getLtd()+","+data.getLng()+"?q="+data.getLtd()+","+data.getLng());
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    if (mapIntent.resolveActivity(context.getPackageManager()) != null) {
+                        context.startActivity(mapIntent);
+                    }
                 }
             });
         }

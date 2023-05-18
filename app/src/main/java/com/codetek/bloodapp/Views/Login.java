@@ -80,8 +80,10 @@ public class Login extends AppCompatActivity  implements Validator.ValidationLis
         });
         login_username=findViewById(R.id.login_username);
         login_password=findViewById(R.id.login_password);
-        login_username.setText("admin@gmail.com");
-        login_password.setText("Admin@123");
+        login_username.setText("user@gmail.com");
+        login_password.setText("User@123");
+//        login_username.setText("admin@gmail.com");
+//        login_password.setText("Admin@123");
 
         login_button=findViewById(R.id.login_button);
         login_button.setOnClickListener(new View.OnClickListener() {
